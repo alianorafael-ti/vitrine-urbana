@@ -1,0 +1,308 @@
+/* Configuração Geral */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Uma cor "Gelo" moderna que destaca os cards brancos */
+  background-color: #bacff0; 
+  color: #333;
+}
+
+/* O Banner Principal */
+.home-header {
+  background-image: url('../img/fotos-lojas/banner-mb.jpg'); /* Verifique o caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  height: 60vh; /* Ocupa 60% da altura da tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Camada escura para o texto não sumir na foto */
+.overlay-home {
+  background: rgba(0, 0, 0, 0.5); /* Preto com 50% de transparência */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Estilo do Título */
+.overlay-home h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.overlay-home p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.titulo-secao {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Grid para colocar os cards lado a lado */
+.ruas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 100px;
+}
+
+/* Estilo do Card Individual */
+.rua-card {
+  display: block;
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: inherit;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rua-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.rua-imagem img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+}
+
+.rua-info {
+  padding: 20px;
+}
+
+.rua-info h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1a1a;
+}
+
+.rua-info p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 8px 0;
+}
+
+.btn-visitar {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff; /* Um azul profissional */
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Card "Em Breve" (Cinza para mostrar que o projeto cresce) */
+.em-breve {
+  background: #eee;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 300px;
+}
+
+/* Seção Como Funciona Premium */
+.como-funciona-premium {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.chamada-principal {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.tag-novidade {
+  background: #ffcc00;
+  color: #000;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.chamada-principal h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  margin: 20px 0;
+  color: #222;
+}
+
+.recursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.recurso-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+.recurso-card:hover {
+  transform: translateY(-10px);
+  border-color: #ffcc00;
+}
+
+.icone-circulo {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.recurso-card h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.recurso-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Banner de Chamada Final */
+.card-destaque {
+  background: #222;
+  color: #fff;
+  padding: 60px 40px;
+  border-radius: 25px;
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-destaque h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.btn-anunciar {
+  display: inline-block;
+  background: #ffcc00;
+  color: #000;
+  padding: 18px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 25px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+}
+
+.btn-anunciar:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+/* Posicionamento do Menu */
+.menu-horizontal {
+  position: absolute;
+  top: 20px; /* Distância do topo da imagem */
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center; /* Centraliza o menu horizontalmente */
+}
+
+.menu-horizontal ul {
+  list-style: none;
+  display: flex; /* Deixa os itens lado a lado */
+  gap: 30px; /* Espaço entre os links */
+  padding: 10px 30px;
+  background: rgba(0, 0, 0, 0.4); /* Fundo escuro sutil para destacar os links */
+  border-radius: 50px; /* Formato de "pílula" */
+  backdrop-filter: blur(5px); /* Efeito de vidro embaçado (opcional) */
+}
+
+.menu-horizontal a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.menu-horizontal a:hover {
+  color: #ffcc00; /* Amarelo ao passar o mouse */
+}
+
+/* Botão de Destaque no Menu */
+.btn-anunciar-topo {
+  color: #ffcc00 !important;
+  border: 1px solid #ffcc00;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+.btn-anunciar-topo:hover {
+  background: #ffcc00;
+  color: #000 !important;
+}
+
+/* Ajuste no Título para não bater no menu */
+.overlay-home h1 {
+  margin-top: 60px; /* Dá espaço para o menu que está acima dele */
+}
+
+.footer-minimalista {
+  background-color: #000;
+  color: #888;
+  text-align: center;
+  width: 100%;
+  
+  /* Controle total da altura */
+  padding: 5px 0;         /* Um respiro bem pequeno */
+  line-height: 1.2;       /* Altura da linha próxima ao tamanho da letra */
+  display: block;
+  border-top: 1px solid #1a1a1a;
+}
+
+.footer-minimalista span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;        /* Tamanho legível (nem minúsculo, nem gigante) */
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+  vertical-align: middle;
+}

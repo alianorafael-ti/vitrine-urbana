@@ -214,6 +214,52 @@ body {
   max-width: 200px;
 }
 
+/* Estilização da Seção Informativa de QR Code */
+.card-qr-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd; /* Fundo levemente diferente para destacar */
+    border: 2px dashed #007bff; /* Borda tracejada azul para remeter a tecnologia */
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-qr-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.card-qr-info p {
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto 15px;
+    line-height: 1.6;
+}
+
+.qr-steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-weight: 600;
+    color: #007bff;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.qr-steps span {
+    background: #e7f3ff;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
 
@@ -230,3 +276,4 @@ body {
   }
 
 }
+
